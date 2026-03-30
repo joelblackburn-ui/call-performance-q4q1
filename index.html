@@ -49,7 +49,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            padding: 50px 60px;
+            padding: 45px 50px;
             display: flex;
             flex-direction: column;
             background:
@@ -70,13 +70,13 @@
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 600;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: var(--zinc-dark);
             letter-spacing: -0.5px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         h2 span {
@@ -87,19 +87,19 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 18px;
         }
 
         .tables-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
+            gap: 20px;
         }
 
         .table-section h3 {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: var(--zinc-dark);
             text-align: center;
         }
@@ -107,9 +107,9 @@
         .table-section h3 .period {
             color: var(--zinc-gray);
             font-weight: 400;
-            font-size: 13px;
+            font-size: 12px;
             display: block;
-            margin-top: 4px;
+            margin-top: 3px;
         }
 
         table {
@@ -119,24 +119,24 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-            font-size: 13px;
+            font-size: 12px;
         }
 
         th {
             background: var(--zinc-black);
             color: var(--zinc-white);
-            padding: 12px 14px;
+            padding: 10px 8px;
             text-align: left;
             font-weight: 600;
-            font-size: 11px;
+            font-size: 9px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
         }
 
         td {
-            padding: 14px;
+            padding: 12px 8px;
             border-bottom: 1px solid var(--zinc-light-gray);
-            font-size: 14px;
+            font-size: 13px;
             color: var(--zinc-gray);
         }
 
@@ -157,41 +157,42 @@
         /* Takeaways section */
         .takeaways {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 8px;
         }
 
         .takeaway-card {
             background: var(--zinc-white);
             border-radius: 12px;
-            padding: 16px 18px;
+            padding: 14px 16px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.04);
             display: flex;
             align-items: flex-start;
-            gap: 12px;
+            gap: 10px;
         }
 
         .takeaway-card .icon {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             background: var(--zinc-fluoro);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            font-size: 12px;
             flex-shrink: 0;
         }
 
         .takeaway-card .text {
-            font-size: 13px;
+            font-size: 11px;
             color: var(--zinc-gray);
             line-height: 1.4;
         }
 
         .takeaway-card .text strong {
             color: var(--zinc-dark);
+            font-size: 12px;
         }
 
         .change-positive {
@@ -232,16 +233,20 @@
                             <thead>
                                 <tr>
                                     <th>Name</th>
+                                    <th>Added</th>
+                                    <th>Contacted</th>
                                     <th>Total Calls</th>
-                                    <th>Via Sequences</th>
+                                    <th>Via Seq</th>
                                     <th>Answered</th>
-                                    <th>Total Time</th>
+                                    <th>Time</th>
                                     <th>Avg Dur</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Harriet</td>
+                                    <td>761</td>
+                                    <td>1,239</td>
                                     <td>2,065</td>
                                     <td>1,432</td>
                                     <td>10%</td>
@@ -250,6 +255,8 @@
                                 </tr>
                                 <tr>
                                     <td>Ploy</td>
+                                    <td>265</td>
+                                    <td>459</td>
                                     <td>1,193</td>
                                     <td>923</td>
                                     <td>13%</td>
@@ -266,16 +273,20 @@
                             <thead>
                                 <tr>
                                     <th>Name</th>
+                                    <th>Added</th>
+                                    <th>Contacted</th>
                                     <th>Total Calls</th>
-                                    <th>Via Sequences</th>
+                                    <th>Via Seq</th>
                                     <th>Answered</th>
-                                    <th>Total Time</th>
+                                    <th>Time</th>
                                     <th>Avg Dur</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Harriet</td>
+                                    <td>980</td>
+                                    <td>1,123</td>
                                     <td>1,912</td>
                                     <td>1,542</td>
                                     <td>11%</td>
@@ -284,6 +295,8 @@
                                 </tr>
                                 <tr>
                                     <td>Ploy</td>
+                                    <td>978</td>
+                                    <td>662</td>
                                     <td>1,471</td>
                                     <td>1,307</td>
                                     <td>16%</td>
@@ -297,24 +310,31 @@
 
                 <div class="takeaways">
                     <div class="takeaway-card">
+                        <div class="icon">🚀</div>
+                        <div class="text">
+                            <strong>Ploy's Prospecting</strong><br>
+                            Prospects added up <span class="change-positive">+269%</span> (265 → 978)
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
                         <div class="icon">📈</div>
                         <div class="text">
-                            <strong>Ploy's Growth</strong><br>
-                            <span class="change-positive">+23%</span> total calls, <span class="change-positive">+42%</span> sequence calls, answered rate up <span class="change-positive">13% → 16%</span>
+                            <strong>Ploy's Calls</strong><br>
+                            <span class="change-positive">+23%</span> total, <span class="change-positive">+42%</span> via sequences, answered <span class="change-positive">13% → 16%</span>
                         </div>
                     </div>
                     <div class="takeaway-card">
                         <div class="icon">🔄</div>
                         <div class="text">
-                            <strong>Harriet's Efficiency</strong><br>
-                            <span class="change-positive">+8%</span> sequence usage, answered rate up <span class="change-positive">+1pp</span>, avg duration <span class="change-positive">+3s</span>
+                            <strong>Harriet's Pipeline</strong><br>
+                            Prospects added <span class="change-positive">+29%</span>, sequence usage <span class="change-positive">+8%</span>
                         </div>
                     </div>
                     <div class="takeaway-card">
                         <div class="icon">💬</div>
                         <div class="text">
-                            <strong>Quality Improving</strong><br>
-                            Both reps showing longer avg call durations, suggesting more substantive conversations
+                            <strong>Quality Up</strong><br>
+                            Both reps showing longer call durations
                         </div>
                     </div>
                 </div>
